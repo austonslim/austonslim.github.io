@@ -1,0 +1,174 @@
+*{
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+}
+
+a:link{
+    color: brown;
+    text-decoration: none;
+}
+a:visited{
+    color: brown;
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+}
+a:active{
+    color: rgb(3, 54, 14);
+    text-decoration: none;
+}
+
+/*-------------------------Grid view-------------------------*/
+[class*="col-"] {
+    float: left;
+    border: 1px solid transparent;
+}
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.col-1{
+    width: 8.33%;
+}
+.col-2{
+    width: 16.66%;
+}
+.col-3{
+    width: 25%;
+}
+.col-4{
+    width: 33.33%;
+}
+.col-5{
+    width: 41.66%;
+}
+.col-6{
+    width: 50%;
+}
+.col-7{
+    width: 58.33%;
+}
+.col-8{
+    width: 66.66%;
+}
+.col-9{
+    width: 75%;
+}
+.col-10{
+    width: 83.33%;
+}
+.col-11{
+    width: 91.66%;
+}
+.col-12{
+    width: 100%;
+}
+/*-------------------------Grid view End---------------------*/
+
+/*-------------Entire body container(main)-------------------*/
+.main{
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px grey;
+    height: auto;
+    margin: 5px 0;
+    font-family: cursive;
+    text-align: center;
+}
+/*-------------------Entire body container End---------------*/
+
+/*----------------------Style for header---------------------*/
+.header{
+    text-align: left;
+    background-color: white;
+    border-radius: 20px 20px 0 0;
+    height: 60px;
+}
+        /*----------------Logo container------------*/
+.logodiv{
+    height: inherit;
+}
+        /*----------------AG Logo-------------------*/
+.logo{
+    margin: 5px;
+    width: 50px;
+    height: auto;
+}
+        /*-------------Menu Icon container----------*/
+.menu{
+    height: inherit;
+    color: brown;
+}
+        /*----------------Menu Icon-----------------*/
+.fa-bars{
+    margin: 0 10px;
+    padding: 10px;
+    border: 1px solid brown;
+}
+        /*----------------Menu content--------------*/
+nav.col-12{
+    text-align: left;
+    background-color: rgb(9, 1, 19);
+    margin: 0;
+    height: auto;
+    display: none;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav.col-12 a{
+    display: block;
+    padding: 2px 10px;
+    color: white;
+}
+nav.col-12 a:hover {
+    background-color: white;
+    color: rgb(36, 35, 35);
+}
+/*.header:hover + nav.col-12{
+    display: block;
+}*/
+/*--------------------Header+Content End---------------------*/
+
+.main section{
+    border: 1px solid transparent;
+    text-align: center;
+}
+section.bgimg{
+    background-image: url("../img/bg\ img.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+div.pic{
+    height: auto;
+}
+div.circle{
+    margin: auto;
+    padding: 10px;
+    border: 1px solid green;
+    width: 70%; height: 90px;
+    border-radius: 50%;
+}
+
+/*-------------------------Footer----------------------------*/
+footer{
+    border: 1px solid blue;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin-top: 70px;
+    border-radius: 0 0 20px 20px;
+    font-size: 15px;
+    text-align: center;
+}
+footer ul a{
+    display: block;
+}
+/*-------------------------Footer End------------------------*/
